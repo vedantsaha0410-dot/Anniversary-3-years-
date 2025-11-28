@@ -38,11 +38,11 @@ function handleButtonClick() {
     container.style.boxShadow = `0 0 40px ${clickCount % 2 === 0 ? '#ff6b6b' : '#ffc3a0'}`;
     
     // E. (The grand finale interaction!) After 5 clicks, show a special message
-    if (clickCount >= 5) {
+    if (clickCount >= 6) {
         button.textContent = "Click for the GRAND FINALE!";
     }
     
-    if (clickCount === 6) {
+    if (clickCount === 7) {
         // Change everything for the final surprise!
         document.body.style.background = 'linear-gradient(45deg, #ffd700, #ff8c00)';
         container.style.backgroundColor = '#ffe0b2';
@@ -58,3 +58,4 @@ function handleButtonClick() {
 
 // 5. Attach the function to the button click event
 button.addEventListener('click', handleButtonClick);
+
